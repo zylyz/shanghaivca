@@ -1,0 +1,833 @@
+@font-face
+{
+font-family: myFirstFont;
+src: url(./filosofiagrand-webfont.ttf);
+font-weight:bold;
+}
+@font-face
+{
+font-family: mySecondFont;
+src: url(./Quicksand_Book.otf);
+font-weight:bold;
+}
+
+body,html{
+    /* -webkit-tap-highlight-color: rgba(0, 0, 0, 0.05); */
+    /* -webkit-overflow-scrolling: touch; */
+}
+
+p,
+div,
+span,
+button {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+
+    outline: none;
+}
+
+
+/* 入口页面样式 */
+.mainPageBox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 100;
+}
+.mainPage{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 5;
+    text-align: center;
+    background: white;
+
+    width: 100%;
+    height: 100%;
+
+    background-size: cover;
+
+    overflow: hidden;
+
+    z-index: 10;
+}
+.mainpagexiugai{
+    opacity: 0;
+    transition: 2s;
+}
+.opacityxiugai{
+    -webkit-animation: opacityxiugaiAnimation 1s ease-in-out forwards;
+    -moz-animation: opacityxiugaiAnimation 1s ease-in-out forwards;
+    -ms-animation: opacityxiugaiAnimation 1s ease-in-out forwards;
+    animation: opacityxiugaiAnimation 1s ease-in-out forwards;
+  }
+
+  @keyframes opacityxiugaiAnimation {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.mainPageTime{
+    padding: 10px;
+    color: #db0f57;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    text-align: center;
+    font-weight: bold;
+    font-size: 17px;
+    background-color: rgba(255,255,255,0.7);
+}
+
+/* 页面入场动画 */
+.mainPageAnimation{
+    transition: 0.4s;
+    opacity: 0;
+}
+.mainPage .mainPageContent>img{
+    width:100%;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    /* max-height: 100vh; */
+}
+.mainPage>.bgImg{
+    position: fixed;
+    height:100%;
+    bottom: 0;
+    z-index:0;
+}
+.mainPage>.imgright{
+    right: 0;
+    width: 4.99rem;
+}
+
+.mainPage>.imgleft{
+    left: 0;
+    width: 6.99rem;
+}
+.mainPage>div{
+    margin: 0 auto;
+    padding: 1px 0;
+}
+.mainPage>.mainPageContent{
+     width: 100%;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     padding: 0;
+     margin: 0;
+
+     position: relative;
+     z-index: 100;
+}
+/* .mainPageContent .mainPageTextImg{
+   width:3.75rem;
+   position: absolute;
+   top: 3.73rem;
+   left: 1.875rem;
+} */
+.mainPageLogo{
+    position: absolute;
+    /* position: fixed; */
+    width: 3.75rem;
+    top: 1rem;
+    left: 50%;
+    margin-left: -1.857rem;
+
+    z-index: 5000;
+}
+
+
+.mainPageContent>.mainPage-bottom{
+    width: 100%;
+    /* background-color: rebeccapurple; */
+ }
+
+ .mainPageContent>.mainPage-body{
+     /* background-color: green; */
+     /* flex: 1;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-align: right;
+
+     overflow-y: scroll;
+     max-height:1000px; */
+     margin: .45rem 0;
+ }
+.mainPageContent>.mainPage-body>div{
+   /* background-color: goldenrod;   */
+   width: auto;
+}
+.ENBox{
+    width:.69rem;
+    height:.69rem;
+    border-radius: 50%;
+    /* border: 1px solid white; */
+    color: white;
+    text-align: center;
+    line-height: 40px;
+
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ENBox>img{
+    width: 100%;
+}
+.mainPageContent>.mainPage-bottom>.mainPage-bottom-icon{
+    padding-bottom: 50px;
+    position: absolute;
+    top: 10.41rem;
+    left: 2.475rem;
+}
+.mainPageContent>.mainPage-bottom>.mainPage-bottom-icon>svg{
+    width: .6rem;
+    height: .6rem;
+    fill: white;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.mainPageContent>.mainPage-bottom>.mainPage-bottom-icon>img{
+    width: 2.55rem;
+}
+.mainPageContent>.mainPage-bottom>.mainPage-bottom-icon>svg:active{
+    background-color: rgba(0,0,0,0.3);
+}
+
+
+.mainPageContent>.mainPage-bottom>.mainPage-bottom-icon>p{
+    margin: 0;
+    margin-top: 5px;
+    color: white;
+    font-size: .25rem;
+}
+
+.mainPageMenu{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    list-style: none;
+
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+
+    opacity: 0;
+}
+.mainPageMenu>li{
+
+    font-size:.4rem;
+    color: white;
+    margin: 15px 0;
+
+    letter-spacing:5px;
+    text-align: center;
+    overflow: hidden;
+
+    height:auto;
+    opacity: 0;
+    transition: 0.5s;
+}
+.mainPageMenu>.line{
+   width: 100%;
+}
+.mainPageMenu>.line>img{
+    width: 100%;
+    display: block;
+    margin: 0;
+}
+
+.mainPageMenu>li>ul{
+    width: 100%;
+    list-style: none;
+
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+.mainPageMenu>li>ul>li{
+    font-size:.3rem;
+    margin: 15px 0;
+}
+.mainPageMenu>li>ul>li>p{
+    letter-spacing:5;
+}
+.mainPageMenu>li>ul>li>span{
+    font-size:.2rem;
+    letter-spacing:0;
+}
+/* 动画状态 */
+.mainPageMenuActive{
+
+}
+.mainPageMenuActive>li{
+    opacity: 1;
+}
+.mainPageMenuActive>li>p{
+    transition: 0.4s;
+    margin: 20px 0;
+}
+.mainPageMenuActive>li>ul{
+   opacity: 1;
+}
+
+
+.mainPageLoadBox{
+    width: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -1rem;
+    margin-top: -2rem;
+    padding: 0 10px;
+    border-radius:4px;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: 0.3s;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 1200;
+}
+.mainPageLoadBox>p{
+    margin: 5px 0;
+    font-size: .3rem;
+    color: #5f6367;
+}
+.mainPageLoadBoxShow{
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+
+/* 音浪加载框动画 */
+.HaveAnimation {
+    margin:5px auto;
+    width:100%;
+    height:60px;
+    text-align: center;
+    font-size: 10px;
+  }
+
+  .HaveAnimation > div {
+    background-color: #000000;
+    height: 100%;
+    width: 2px;
+    display: inline-block;
+    margin: 0 2px;
+
+    border-radius: 20px;
+
+    -webkit-animation: stretchdelay 1.5s infinite ease-in-out;
+    animation: stretchdelay 1.5s infinite ease-in-out;
+  }
+
+  .HaveAnimation>div:nth-child(2){
+    -webkit-animation-delay: -1.4s;
+    animation-delay: -1.4s;
+  }
+
+  .HaveAnimation>div:nth-child(3){
+    -webkit-animation-delay: -1.3s;
+    animation-delay: -1.3s;
+  }
+
+  .HaveAnimation>div:nth-child(4){
+    -webkit-animation-delay: -1.2s;
+    animation-delay: -1.2s;
+  }
+
+  .HaveAnimation>div:nth-child(5){
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+  }
+  @-webkit-keyframes stretchdelay {
+    0%, 40%, 100% { -webkit-transform: scaleY(0.3) }
+    20% { -webkit-transform: scaleY(1.0) }
+  }
+
+  @keyframes stretchdelay {
+    0%, 40%, 100% {
+      transform: scaleY(0.3);
+      -webkit-transform: scaleY(0.3);
+      background-color: #000000;;
+    }  20% {
+      transform: scaleY(1.0);
+      -webkit-transform: scaleY(1.0);
+      background-color: #000000;
+    }
+  }
+  /* 音浪加载框动画 END*/
+
+
+  /* 数字选择组件 */
+     .numberBox{
+         /*background-color: black;*/
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         min-height: 100%;
+         overflow-y: auto;
+         /*background-image: url("../images/newbg.jpg");*/
+         background-size: 100% 100%;
+         background-repeat: no-repeat;
+
+         display: flex;
+         align-items: center;
+         /* justify-content:center; */
+         flex-direction: column;
+         padding: .6rem 0;
+         box-sizing: border-box;
+     }
+     .numberBox>p{
+         color: white;
+         text-align: center;
+         font-size: .35rem;
+         margin:0.05rem .5rem;
+     }
+     .numberBox .numberBox_line{
+         width: 5rem;
+         position: absolute;
+         left: 50%;
+         margin-left: -2.5rem;
+         bottom: 0;
+     }
+     .numberBox>.numberBox_title{
+         font-size: .45rem;
+         margin-top:10px;
+     }
+     .numberBox>.numberBox_title>span{
+         width: 100%;
+         font-size: .45rem;
+         /* display: block; */
+         margin-top: .1rem
+     }
+     .numberBox>.numberBox_title>a{
+         display: block
+     }
+     .numberBox>.numberBox_inputBox{
+        width:90%;
+        height: auto;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        list-style: none;
+        flex-wrap: wrap;
+        padding: 10px;
+        margin:0 auto;
+        box-sizing: border-box;
+        max-width: 500px;
+        font-weight: 100;
+     }
+     .numberBox>.numberBox_inputBox>li{
+         width:1.1rem;
+         height:1.1rem;
+         max-width: 100px;
+         max-height: 100px;
+         background-color: #212b3a;
+         margin:.05rem;
+         border-radius:50%;
+         border:1px solid white;
+
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         color: white;
+
+         font-size: .6rem;
+         transition: 0.2s;
+
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         flex-direction:column;
+     }
+     .numberBox>.numberBox_inputBox>li:active{
+         background-color: rgba(255,255,255,0.1);
+     }
+     .numberBox>img{
+         width: 50%;
+         max-width: 150px;
+         display: block;
+         margin: .5rem auto;
+     }
+     .numberBox .audioBox_2{
+          width: .6rem;
+          margin:.2rem auto;
+     }
+     .numberBox .audioBox_2>svg{
+         fill: white;
+     }
+     .numberBox .audioBox_2>audio{
+         display: none;
+     }
+     .numberBox>.numberBox_inputBox_min>li{
+         width: .9rem;
+         height: .9rem;
+         background-color: transparent;
+         margin:.1rem;
+         font-size: .5rem;
+         overflow: hidden;
+     }
+     .numberBox>.numberBox_inputBox>li::before{
+         height: .1rem;
+         content: "";
+         display: block;
+         background-color: transparent;
+         /* background-color: greenyellow; */
+     }
+     .numberBox_inputBox_animation{
+         /* background-color: goldenrod; */
+
+         -webkit-animation: numberBox_inputBox_animation 0.2s ease-in-out;
+         -moz-animation: numberBox_inputBox_animation 0.2s ease-in-out;
+         -ms-animation: numberBox_inputBox_animation 0.2s ease-in-out;
+         animation: numberBox_inputBox_animation 0.2s ease-in-out;
+     }
+
+     /* 抖动动画 */
+     @keyframes numberBox_inputBox_animation {
+        0%, 100% {
+            -webkit-transform: translateX(0);
+            -ms-transform: translateX(0);
+            -moz-transform: translateX(0);
+            transform: translateX(0);
+            opacity: 1;
+        }
+        10%,
+        30%,
+        50%,
+        70%,
+        90% {
+            -webkit-transform: translateX(-5px);
+            -ms-transform: translateX(-5px);
+            -moz-transform: translateX(-5px);
+            transform: translateX(-5px);
+            opacity: 0.8;
+        }
+        20%,
+        40%,
+        60%,
+        80% {
+            -webkit-transform: translateX(5px);
+            -ms-transform: translateX(5px);
+            -moz-transform: translateX(5px);
+            transform: translateX(5px);
+            opacity: 0.8;
+        }
+      }
+
+
+  /* 数字选择组件 END */
+.yunceng{
+    width: 100%;
+    position: fixed;
+    left:0;
+    bottom:-1.5rem;
+    height:8.82rem;
+    z-index: 99;
+}
+.yuncengone{
+    width:100vw;
+    height:3.5rem;
+    background-image: url("../images/cloudAnimation.png");
+    background-size: cover;
+    float: left;
+}
+.clound {
+    width:16.39rem;
+    height:11.09rem;
+    position: absolute;
+    left:0;
+    top:0;
+    background-image: url("../images/yunthree.png");
+    background-size: cover;
+}
+.yuncengtwo{
+    width:100vw;
+    height: 3.5rem;
+    /* background-image: url(../images/yun4.png); */
+    background-image: url("../images/yunthree.png");
+    background-size: cover;
+    transform: scale(1,-1);
+    float: left;
+}
+
+.coverBox{
+    width: 100%;
+    height: 100%;
+    position: relative;;
+    top:0;
+    left: 0;
+    background-color: white;
+    margin: 0 auto;
+    max-width: 750px;
+}
+.coverBox>img{
+    width: 100%;
+    position: absolute;
+    left:0;
+    top: 0;
+}
+
+.coverBox>img:nth-child(2){
+    bottom:.35rem;
+    top:initial;
+}
+
+/*  */
+.numberBox_radioBox{
+    width: 100%;
+    list-style:none;
+    margin-top: 10px;
+    height: auto;
+}
+.numberBox_radioBox>li{
+    width: 80%;
+    border: 1px solid white;
+    border-radius: 50px;
+    margin: .3rem auto;
+    /* padding: .25rem 10px; */
+    color: white;
+    text-align: center;
+    font-size: .3rem;
+    padding: 0.16rem 10px;
+}
+.numberBox_radioBox>.active{
+    background-color: white;
+    color: black;
+}
+
+
+/* 2018 3/26 底部弹出层组件 */
+.BottomPopup{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    transition: 0.3s;
+    overflow: hidden;
+    opacity: 0;
+    display: none;
+    z-index: 10000;
+}
+.BottomPopup>.BottomPopupContent{
+    width:calc(100% - 40px);
+    position: absolute;
+    padding: 10px;
+    left: 10px;
+    bottom: 20px;
+    background-color: rgba(23,33,55,0.9);
+
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+    opacity: 0;
+    transition: 0.5s;
+
+    -webkit-animation: BottomPopupCloseAnimation 0.3s ease-in-out forwards;
+    -moz-animation: BottomPopupCloseAnimation 0.3s ease-in-out forwards;
+    -ms-animation: BottomPopupCloseAnimation 0.3s ease-in-out forwards;
+    animation: BottomPopupCloseAnimation 0.3s ease-in-out forwards;
+}
+  /* 动画样式 */
+  .BottomPopupShow{
+      opacity: 1;
+  }
+  .BottomPopupShow>.BottomPopupContent{
+    -webkit-animation: BottomPopupShowAnimation 0.4s ease-in-out forwards;
+    -moz-animation: BottomPopupShowAnimation 0.4s ease-in-out forwards;
+    -ms-animation: BottomPopupShowAnimation 0.4s ease-in-out forwards;
+    animation: BottomPopupShowAnimation 0.4s ease-in-out forwards;
+  }
+
+  @keyframes BottomPopupShowAnimation {
+    70%{
+        -webkit-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        -moz-transform: translateY(-10px);
+        transform: translateY(-10px);
+        opacity: 1;
+    }
+    90%{
+        -webkit-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+        -moz-transform: translateY(-5px);
+        transform: translateY(-5px);
+        opacity: 1;
+    }
+    100%{
+        -webkit-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        transform: translateY(0px);
+        opacity: 1;
+    }
+  }
+  @keyframes BottomPopupCloseAnimation {
+    0%{
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -moz-transform: translateY(0);
+        transform: translateY(0);
+    }
+    100%{
+        -webkit-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+        -moz-transform: translateY(100%);
+        transform: translateY(100%);
+    }
+  }
+
+/* 2018 3/26 底部弹出层组件 END*/
+
+ /* 答题结果样式 */
+ .answerResultsPop{
+     margin: 1.2rem auto;
+     letter-spacing:1px;
+
+     /* --------------- */
+     position: relative;;
+ }
+.ball{
+    position: absolute;
+    z-index: -1;
+}
+
+
+ .answerResultsPop>p{
+     margin:.25rem 0;
+     text-align: center;
+     line-height: .45rem;
+     font-size: .3rem;
+ }
+ .answerResultsPop>p:nth-child(1){
+     font-size: .35rem;
+ }
+ .answerResultsPop button{
+     position: initial;
+     transform: initial;
+     margin: .4rem auto;
+     display: block;
+ }
+
+ /* 答题结果样式 END*/
+
+
+ .searchBottomBox{
+     width: 100%;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1.86rem;
+    margin: 0 auto .18rem auto;
+ }
+ .searchBottomBox>input{
+     display: block;
+     margin: 0 auto;
+     outline: none;
+ }
+ .searchBottomBox>img{
+     width: 0.48rem;
+     display: block;
+     margin:.65rem  auto 0 auto;
+ }
+
+/* 按钮样式 1 */
+ .myBtn-1{
+    border: 1px solid white;
+    min-height: .8rem;
+    color: white;
+    min-width: 50%;
+    border-radius: 100px;
+    background-color: transparent;
+    font-size: .35rem;
+    letter-spacing: 2px;
+    outline: none;
+ }
+
+
+
+ .audioInfoBoxContent .fm-fr{
+    font-size: .34rem;
+ }
+
+
+
+ /* ******************************** */
+ .opacityShow{
+    -webkit-animation: opacityShowAnimation 1s ease-in-out forwards;
+    -moz-animation: opacityShowAnimation 1s ease-in-out forwards;
+    -ms-animation: opacityShowAnimation 1s ease-in-out forwards;
+    animation: opacityShowAnimation 1s ease-in-out forwards;
+  }
+
+  @keyframes opacityShowAnimation {
+    0%{
+        opacity: 0;
+        /* transform: translateY(-5px); */
+    }
+    100%{
+        opacity: 1;
+        /* transform: translateY(0px); */
+    }
+}
+.page_menu_bg>div>a{
+    display: block;
+}
+.page_menu_hide>div{
+    opacity: 0;
+    z-index: 3000;
+    transform: translateY(-5px);
+}
+.page_menu_hide>img{
+    opacity:0;
+    z-index:99;
+}
+.search_prompt_show{
+    height: .35rem !important;
+    -webkit-animation: numberBox_inputBox_animation 0.3s ease-in-out;
+    -moz-animation: numberBox_inputBox_animation 0.3s ease-in-out;
+    -ms-animation: numberBox_inputBox_animation 0.3s ease-in-out;
+    animation: numberBox_inputBox_animation 0.3s ease-in-out;
+}
+.menuItem{
+    opacity: 1 !important;
+}

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html style="font-size:100px;">
+
+<head>
+	<meta charset="UTF-8">
+	<!--<title>Van Cleef & Arpels</title>-->
+	<title>梵克雅宝高级珠宝展</title>
+	<meta name="viewport" content="width=device-width,  initial-scale=1, maximum-scale=1, user-scalable=0">
+	<meta name="screen-orientation" content="portrait">
+	<!-- uc强制竖屏 -->
+	<meta name="x5-orientation" content="portrait">
+	<!-- QQ强制竖屏 -->
+	<meta http-equiv="Access-Control-Allow-Origin" content="*">
+	<link rel="stylesheet" href="./app/css/base.css" />
+	<link rel="stylesheet" href="./app/css/index.css" />
+	<link rel="stylesheet" href="./app/css/index_t.css" />
+	<link rel="stylesheet" href="./app/css/PageSmallDetail.css">
+	<link rel="stylesheet" href="./app/css/Roll_scroll.css">
+	<script>
+        if (/(com.meitu)/gi.test(navigator.userAgent)) document.write('<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />');
+        else if (!/iPhone|iPad/ig.test(navigator.userAgent)) document.write('<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,target-densitydpi=device-dpi" />');
+        else document.write('<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />')
+    </script>
+	<script type="text/javascript">
+		window.onresize = function () {
+			var w = window.innerWidth || document.documentElement.offsetWidth || document.body.offsetWidth;
+			var h = window.innerHeight || document.documentElement.offsetHeight || document.body.offsetHeight;;
+			w = w < h ? w : h;
+			//let d = w<h?(750 / 100):(1100 / 100);
+			let d = 750 / 100;
+			var fontSize = w / d;
+
+			document.documentElement.style.fontSize = fontSize + 'px';
+
+			coverImg();
+
+		};
+		window.onresize();
+		// 等比缩放图片
+		function coverImg(item, box) {
+			var w, h;
+			if (box) {
+				w = box.innerWidth || box.offsetWidth || box.scrollWidth;
+				h = box.innerHeight || box.offsetHeight || box.scrollHeight;
+			}
+			else {
+				w = window.innerWidth || document.documentElement.clientWidth || document.body.offsetWidth;
+				h = window.innerHeight || document.documentElement.clientHeight || document.body.offsetHeight;
+			}
+
+			let coverImg = item ? [item] : document.getElementsByClassName("coverImg");
+			for (let i = 0; i < coverImg.length; i++) {
+				let item = coverImg[i];
+				let iW = item.offsetWidth;
+				let iH = item.offsetHeight || item.scrollHeight;
+
+				let r = false;
+				if (iH >= h && iW <= w) {
+					r = true;
+				} else if (iH <= h && iW >= w) {
+					r = false;
+				}
+
+				if (r) {
+					item.style.height = "100%";
+					item.style.width = "auto";
+				} else {
+					item.style.width = "100%";
+					item.style.height = "auto";
+				}
+			}
+		}
+		window.coverImg = coverImg;
+	</script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117686697-1"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-117686697-1');
+		</script>
+	<script src="app/polyfill.min.js"></script>
+	<script type="text/javascript">
+		// document.addEventListener("touchmove",function(e){
+		//    e && e.preventDefault();
+		// },false);
+
+	
+
+		
+	</script>
+	<script typet="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+
+	<style>
+		#HorizontalScreenHint {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-color: #111217;
+			display: none;
+			z-index: 30000;
+		}
+
+		#HorizontalScreenHint>img {
+			width: 2.61rem;
+			margin: 0 auto;
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translateX(-50%) translateY(-50%);
+			-webkit-transform: translateX(-50%) translateY(-50%);
+			-moz-transform: translateX(-50%) translateY(-50%);
+		}
+	</style>
+</head>
+
+<body style="backgroundImage:url(app/images/mediumgallery.jpg)">
+	<div id="HorizontalScreenHint">
+		<img src="app/images/HorizontalScreenHint.png" />
+	</div>
+	<div id="app-container">
+
+	</div>
+	<script src="bundle.js?v=89"></script>
+	<script>
+		 function getWxShareConfig() {
+            var config = {};
+            $.ajax({
+                url: location.host == 'vca2018exhi.infinitysia.com'
+                    ? '//api.infinitysia.com/index/getSignPackage'
+                    : '/background/index.php?s=user/getSignPackage',
+                type: "GET",
+                dataType: 'json',
+                cache: false,
+                success: function (json) {
+                    config.debug = false;
+                    config.appId = json.data.appId;
+                    config.timestamp = json.data.timestamp;
+                    config.nonceStr = json.data.nonceStr;
+                    config.signature = json.data.signature;
+                    config.jsApiList = ['onMenuShareAppMessage', 'onMenuShareTimeline', 'hideOptionMenu'];
+                    wx.config(config);
+                }
+            });
+        }
+
+
+
+		getWxShareConfig();
+
+
+
+
+
+		// var url = "http://www.asaplus.com.cn/wx/signpackage.php?url=http://vca2018exhi.flipscript.com.cn";
+		// $.ajax({
+		// 	type: "get",
+			// headers: {
+			// 	'Access-Control-Allow-Origin': '*'
+			// },
+		// 	url: url,
+		// 	dataType: "json",
+		// 	async: false,
+		// 	data: { url: url },
+		// 	success: function (data) {
+		// 		alert(data.appid)
+		// 		wx.config({
+		// 			debug: true,////生产环境需要关闭debug模式
+		// 			appId: data.appid,//appId通过微信服务号后台查看
+		// 			timestamp: data.timestamp,//生成签名的时间戳
+		// 			nonceStr: data.nonceStr,//生成签名的随机字符串
+		// 			signature: data.signature,//签名
+		// 			jsApiList: [//需要调用的JS接口列表
+		// 				'checkJsApi',//判断当前客户端版本是否支持指定JS接口
+		// 				'onMenuShareTimeline',//分享给好友
+		// 				'onMenuShareAppMessage'//分享到朋友圈
+		// 			]
+		// 		});
+		// 	},
+		// 	error: function (xhr, status, error) {
+		// 		//alert(status);
+		// 		//alert(xhr.responseText);
+		// 	}
+		// })
+		wx.ready(function () {
+			var link = window.location.href;
+			link = link.split('#')[0];
+			var protocol = window.location.protocol;
+			var host = window.location.host;
+			//分享朋友圈
+			wx.onMenuShareTimeline({
+				title: '梵克雅宝邀您共赏“雅艺之美”',
+				link: link,
+				imgUrl:  location.origin + '/app/images/fenxiang.jpg',// 自定义图标
+				trigger: function (res) {
+					// 不要尝试在trigger中使用ajax异步请求修改本次分享的内容，因为客户端分享操作是一个同步操作，这时候使用ajax的回包会还没有返回.
+					//alert('click shared');
+				},
+				success: function (res) {
+					//alert('shared success');
+					//some thing you should do
+				},
+				cancel: function (res) {
+					//alert('shared cancle');
+				},
+				fail: function (res) {
+					//alert(JSON.stringify(res));
+				}
+			});
+			//分享给好友
+			wx.onMenuShareAppMessage({
+				title: '梵克雅宝“雅艺之美”典藏臻品回顾展', // 分享标题
+				desc: '4/21-8/5，北京今日美术馆，我们不见不散', // 分享描述
+				link: link, // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+				imgUrl:location.origin + '/app/images/fenxiang.jpg', // 自定义图标
+				type: 'link', // 分享类型,music、video或link，不填默认为link
+				dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+				success: function () {
+					// 用户确认分享后执行的回调函数
+				},
+				cancel: function () {
+					// 用户取消分享后执行的回调函数
+				}
+			});
+			wx.error(function (res) {
+				//alert(res.errMsg);
+			});
+		});
+	</script>
+	
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+*{
+    padding:0;
+    margin:0;
+}
+@font-face
+{
+font-family: myFirstFont;
+src: url(/app/css/filosofiagrand-webfont.ttf);
+font-weight:bold;
+}
+@font-face
+{
+font-family: mySecondFont;
+src: url(/app/css/Quicksand_Book.otf);
+font-weight:bold;
+}
+.dancer{
+    width:100%;
+    height:100%;
+    overflow: hidden;
+    /*background-image: url('../images/newbg.jpg');*/
+    background-size:cover;
+    position: absolute;
+}
+.dancer .titles{
+    position: relative;
+    width:100%;
+    height:1.7rem;
+    font-size: .37rem;
+    color:white;
+}
+.dancer .titles img{
+    position: absolute;
+    top:.92rem;
+    left:.17rem;
+    width:.24rem;
+    height:.42rem;
+    line-height: .5rem;
+}
+.titles_p {
+    font-size: .37rem;
+    position: relative;
+    top:.7rem;
+    text-align: center;
+}
+
+.dancer .titles_p .tit1{
+    /* font-family:myFirstFont; */
+    position: relative;
+    /* line-height: 1rem; */
+}
+.d_photo{
+    margin-top:.8rem;
+    width:100%;
+    position: relative;
+}
+
+.d_photo img{
+    height:3.2rem;
+    display: block;
+    margin:auto;
+    margin-top: .0001rem;
+}
+
+.d_photo .ps{
+    position: relative;
+    width: 83%;
+    left: 8.5%;
+    text-align: center;
+    font-size: .33rem;
+    color:white;
+    letter-spacing:1px;
+    font-family: 'SimHei ';
+}
+.scrolls{
+    position: relative;
+    width:100%;
+    height: 3.7rem;
+    overflow-y: hidden;
+}
+button{
+    width: 38%;
+    border: 1px solid white;
+    border-radius: 50px;
+    margin: .4rem auto;
+    padding: 10px auto;
+    min-height: .8rem;
+    color: white;
+    margin-left:31%;
+    background: none;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: .8rem;
+    position: absolute;
+    bottom: .2rem;
+    font-size: .35rem;
+}
+.long img{
+    width:2.6rem;
+    height:2.6rem;;
+    margin-left:2.2rem;
+}
+@media screen and (min-width: 300px) {
+
+    .d_photo .ps{
+        position: relative;
+        /* margin-top: .5rem; */
+        width: 83%;
+        left: 8.5%;
+        line-height: .6rem;
+        text-align: center;
+        font-size: .33rem;
+        color:white;
+    }
+    .d_photo{
+        width:100%;
+    }
+    .d_photo img{
+        height:3.2rem;
+        display: block;
+        margin:auto;
+        margin-top: .1rem;
+    }
+}
+
+@media screen and (min-width: 414px) {
+  
+    .d_photo .ps{
+        position: relative;
+        width: 83%;
+        left: 8.5%;
+        line-height: .6rem;
+        text-align: center;
+        font-size: .33rem;
+        color:white;
+    }
+
+    .d_photo{
+        width:100%;
+    }
+    .d_photo img{
+        height:3.2rem;
+        display: block;
+        margin:auto;
+        margin-top: .0001rem;
+    }
+}
+@media screen and (min-width: 750px) {
+   
+    .d_photo{
+        width:100%;
+    }
+    .d_photo img{
+        height:3.2rem;
+        display: block;
+        margin:auto;
+    }
+    .d_photo .ps{
+        position: relative;
+        /* margin-top:.5rem; */
+        width: 83%;
+        left: 8.5%;
+        text-align: center;
+        font-size: .33rem;
+        color:white;
+    }
+}

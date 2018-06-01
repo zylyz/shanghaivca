@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin:0;
+}
+::-webkit-scrollbar{
+    display:none;
+}
+
+.gun{
+    width:7.5rem;
+    overflow-y:hidden;   
+    margin-top: .1rem;
+    overflow-x:auto; 
+    text-align: center;
+    position: relative;
+    overflow-x:auto;
+    scrollbar-3dlight-color:transparent;
+    scrollbar-highlight-color:transparent;
+    scrollbar-face-color:transparent;
+    scrollbar-arrow-color:transparent;
+    scrollbar-shadow-color:transparent;
+    scrollbar-darkshadow-color:transparent;
+    scrollbar-base-color:transparent;
+    scrollbar-track-color:transparent;
+}
+.gun ul{
+    width:780px;
+    height: 100%;
+    overflow:hidden;
+    display: box;
+    margin: auto;
+}
+.gun ul li{
+    font-size: 0;
+    float:left;
+    width:2.6rem;
+}
+.gun ul li:nth-child(1){
+    margin-left:16%
+}
+.gun ul li img{
+    position: relative;
+    top:-.38rem;
+    width:2.5rem;
+    font-size: 0;
+}
+
+.gun .yuan{
+    position: relative;
+    z-index: 9999;
+    float:right;
+    width:.35rem ;
+    height:.35rem ;
+    right: .15rem;
+    top: .1rem;
+    border-radius: 50%;
+    border:1px solid white;
+}
+.gun .yuan img{
+    z-index: 9999;
+    position: absolute;
+    float:left;
+    width: .42rem;
+    height: .4rem;
+    left: -.04rem;
+    top: -.027rem;
+}
+.gun .lis .yuan{
+    position: relative;
+    z-index: 9999;
+    float:right;
+    width:.35rem ;
+    height:.35rem ;
+    right: .15rem;
+    top: .1rem;
+    border-radius: 50%;
+    border:1px solid white;
+}
+.gun .lis .yuan img{
+    z-index: 9999;
+    position: absolute;
+    float:left;
+    width: .41rem;
+    height: .4rem;
+    left: -.04rem;
+    top: -.027rem;
+}
+.gun .lis{
+
+    height: 3.3rem;
+    width: 2.6rem;
+    padding-bottom: .25rem;
+}
+.gun .lis .spans img{
+    position: relative;
+    top:.7rem;
+    width:2.2rem;
+    font-size: 0;
+    padding-bottom: .25rem;
+}
+@media screen and (min-width: 300px) {
+ 
+    .gun ul{
+        width:780px;
+        height: 100%;
+        overflow:hidden;
+        display: box;
+        margin: auto;
+    }
+    .gun ul li{
+        float:left;
+        width:2.6rem;
+    }
+}
+@media screen and (min-width: 414px) {
+
+    .gun ul{
+        width:880px;
+        height: 100%;
+        overflow:hidden;
+        margin: auto;
+    }
+    .gun ul li{
+        float:left;
+        width:2.6rem;
+    }
+}
+@media screen and (min-width: 750px) {
+
+    .gun ul{
+        width:1500px;
+        height: 100%;
+        overflow:hidden;
+        margin: auto;
+    }
+    .gun ul li{
+        float:left;
+        width:2.6rem;
+        height: 100%;
+    }
+   
+}

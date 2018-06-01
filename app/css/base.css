@@ -1,0 +1,257 @@
+/*!
+  **************************************************************
+ *                                                            *
+ *   .=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-.       *
+ *    |                     ______                     |      *
+ *    |                  .-"      "-.                  |      *
+ *    |                 /            \                 |      *
+ *    |     _          |              |          _     |      *
+ *    |    ( \         |,  .-.  .-.  ,|         / )    |      *
+ *    |     > "=._     | )(__/  \__)( |     _.=" <     |      *
+ *    |    (_/"=._"=._ |/     /\     \| _.="_.="\_)    |      *
+ *    |           "=._"(_     ^^     _)"_.="           |      *
+ *    |               "=\__|IIIIII|__/="               |      *
+ *    |              _.="| \IIIIII/ |"=._              |      *
+ *    |    _     _.="_.="\          /"=._"=._     _    |      *
+ *    |   ( \_.="_.="     `--------`     "=._"=._/ )   |      *
+ *    |    > _.="                            "=._ <    |      *
+ *    |   (_/                                    \_)   |      *
+ *    |                                                |      *
+ *    '-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-='      *
+ *                                                            *
+ *           LASCIATE OGNI SPERANZA, VOI CH'ENTRATE           *
+ **************************************************************
+ ******************************************************************
+ *  项目名称 : shanghaiVCA
+ *  文件描述 :
+ *  文件名称 : base.css
+ *  版  本  : v1.0.0.0
+ *  说  明  :
+ *  作  者  : night
+ *  邮  箱  : 88962800@qq.com
+ *  创建时间 : 2018:03-26 22:07
+ ******************************************************************
+    Copyright © 2017-2018, All rights reserved.
+ ******************************************************************
+ */
+
+
+@font-face {
+    font-family: fr;
+    src: url(./filosofiaregular-webfont.woff);
+}
+@font-face {
+    font-family: fr1;
+    src: url(./filosofiagrand-webfont.ttf);
+}
+
+@font-face {
+    font-family: qb;
+    src: url(./Quicksand_Book.otf)  ;
+    font-weight: bold;
+}
+@font-face {
+    font-family: bl;
+    src: url(./brownstd-light.eot);
+    src: url('./brownstd-light.eot?#iefix') format('embedded-opentype'),
+         url('./brownstd-light.woff') format('woff'),
+         url('./brownstd-light.ttf') format('truetype'),
+         url('./brownstd-light.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'jianson';
+    src: url("./jianson.ttf") format("truetype");
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.fm-qb {
+    font-family: qb
+}
+
+.fm-fr {
+    font-family: fr ;
+}
+.fm-fr1 {
+    font-family: fr1 ;
+}
+.fm-bl{
+    font-family: bl;
+}
+
+
+
+.fm-hy {
+    font-family: 'jianson'
+}
+
+.fm-ht {
+    font-family: "SimHei", "黑体", "Microsoft YaHei", "sans-serif"
+}
+
+.fm-st {
+    font-family: "宋体", SimSun ;
+}
+
+body {
+    background: #5f6367;
+}
+
+html, body, div, * {
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+
+.bgmusic_container {
+    position: absolute;
+    top: .64rem;
+    left: 6.78rem;
+    z-index: 99;
+}
+
+.bgmusic_container a {
+    width: .51rem;
+    height: .46rem;
+    display: block;
+}
+
+.bgmusic_container a img {
+    width: .51rem;
+    height: .46rem;
+}
+
+
+.gallery{text-align: center;padding:1px 0 0;background-size:100% 100%;}
+.public .header,.gallery .header{ position: relative;}
+.gallery .header{overflow: hidden;}
+.public  .header .name,.gallery  .header .name{ margin:.59rem 0 0;}
+ .public .header .name img, .gallery .header .name img{vertical-align: middle; width:3.75rem}
+ .public .header .years, .gallery .header .years{font-size:.38rem;font-family: "宋体", SimSun;color:#fff;margin:.15rem 0 0; font-weight: normal; }
+ .public .header .search, .gallery .header .search{position: absolute; left:0;top:0}
+ .header .search .btn-search, .gallery .search .btn-search{z-index: 9999;position: absolute;left:6.76rem;top:.62rem;display: block; width:.46rem;height:.46rem;}
+ .header .search .btn-search img, .gallery .search .btn-search img{width:.46rem;z-index: 9999;}
+.gallery .year-desc{padding:0 1.04rem;text-align: center;margin:.48rem 0 0;color:#fff;}
+.gallery .year-desc p{line-height:.46rem; font-size:.32rem;}
+.gallery .year-desc .fm-fr{line-height:.46rem; font-size:.34rem;}
+.gallery .recommend{margin:.65rem 0 0;font-size:.41rem;font-family:"宋体", SimSun ;color: #fff;}
+.gallery .recommend .line {width:.36rem;height:1px;background:white;}
+.gallery .recommend .line,.gallery .recommend .text{vertical-align: middle;display: inline-block;}
+.gallery .recommend .text{margin:0 .2rem;letter-spacing: .02rem;}
+.gallery .recommend .fm-fr{font-size: .41rem}
+.gallery .header .btn-return,.public .header .btn-return{position:absolute;width:1rem;height:1rem;top:.63rem;left:.15rem;}
+.gallery .header .btn-return img,.public .header .btn-return img{position:absolute;left:0;top:0;width:.21rem;height:.41rem;z-index: 9999;}
+.product_list {
+    margin-top:.68rem;
+}
+
+.product_list .item {
+    margin-bottom: 1.8rem;
+}
+.product_list .item .thumail {
+    text-align: center;
+}
+
+.product_list .item .thumail img {
+    border: none;
+    vertical-align: middle;
+    outline: none;
+}
+.product_list .item .title span{
+    height: .49rem;
+    display: inline-block;
+    position: relative;
+    line-height: .49rem;
+}
+.product_list .item .title, .product_list .item .year {
+    color: white;
+    text-align: center;
+    letter-spacing: .02rem;
+}
+
+.product_list .item .key {
+    position: absolute;
+    right: -.9rem;
+    top:-.6rem;
+}
+.product_list .item .key img{
+    width:.56rem;
+    height: .56rem;
+}
+
+.product_list .item .title {
+    font-size: .4rem;
+    margin-top:.6rem;
+    /* font-family: fr,"宋体", SimSun ; */
+    letter-spacing: .01rem;
+    padding: 0 0.45rem ;
+}
+.product_list .item .fm-fr .title{
+    font-size: .45rem;
+}
+.product_list .item .year {
+    font-size: .35rem;
+    /* margin-top:.28rem; */
+    /* font-style: italic; */
+}
+.btnsss{
+    width: 68%;
+    border: 1px solid white;
+    border-radius: 50px;
+    margin: auto;
+    display: block;
+    padding: 10px auto;
+    min-height: .8rem;
+    color: white;
+    background: none;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: .8rem;
+    font-size: .35rem;
+
+}
+
+.hand_ani{
+    animation: hand_ani 1.2s 3;
+    animation-fill-mode:forwards;
+}
+@keyframes hand_ani {
+    0%{
+        opacity:0;
+        transform:translate(0,2.2rem)
+    }
+    50%,80%{
+        opacity:1;
+        transform:translate(0)
+    }
+    100%{
+        opacity:0;
+
+        transform:translate(0)
+    }
+
+}
+/* .cnen span:nth-child(1){
+    font-family: fm-bl;
+} */
+/* .cnen span:nth-child(2){
+    font-family: fm-st;
+} */
+.yaoshiicon{
+    animation: yaoshiicon 1s infinite;
+    animation-fill-mode:forwards;
+}
+@keyframes yaoshiicon {
+    0%{
+        transform:translate(0,0)
+    }
+    50%{
+        transform:translate(0,-0.12rem)
+    }
+    100%{
+        transform:translate(0,0)
+    }
+
+}

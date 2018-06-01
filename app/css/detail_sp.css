@@ -1,0 +1,698 @@
+@font-face
+{
+font-family:"myFirstFont";
+src: url(/app/css/filosofiagrand-webfont.ttf);
+font-weight:bold;
+}
+
+*{ padding: 0;margin: 0;}
+
+.vca_detail_backg{
+	position:absolute;
+	width: 100%;
+	height:100%;
+	overflow-y: auto;
+	background-image: url(../images/detail/detail_home.jpg);
+	background-size:100% 100% ;
+}
+
+.vca_detail_back{
+	position:absolute;
+  top: .91rem;
+	left: 0rem;
+}
+.vca_detail_back>a{
+	  display: block;
+    width: .8rem;
+    height: 1rem;
+    text-align: center;
+    line-height: 1rem;
+}
+
+.vca_detail_tit1{
+	margin:0px auto auto auto;
+	margin-top: .68rem;
+	width:auto;
+	text-align: center;
+	height:auto;
+	line-height: .5rem;
+	color: white;
+}
+
+.vca_detail_tit1 > h4 span{
+	letter-spacing:0.01rem;
+	font-size:.4212rem;
+	font-family:myFirstFont;
+}
+
+.vca_detail_search{
+	position: absolute;
+  top: .93rem;
+	right: .29rem;
+}
+
+.vca_detail_mbox{
+	position:absolute;
+	top: 2.57rem;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+
+.vca_detail_mbox_tit{
+	position:absolute;
+	top: 5.74rem;
+	text-align: center;
+	color: white;
+	margin:0 auto;
+	left: 0;
+	right: 0;
+}
+
+.vca_detail_mbox_tit > p{
+	font-style: italic;
+	font-size:.45rem;
+	margin-top: .2rem;
+}
+
+.vca_detail_mbox_detail{
+	margin: 0 auto auto auto;
+	margin-top:5.7rem;
+	text-align: center;
+	font-size: .25rem;
+	color: white;
+}
+
+.vca_detail_mbox_detail > p{
+ margin-top: -.18rem;
+}
+
+.vca_detail_xinz{
+	margin: 0 auto auto auto;
+	margin-top: .18rem;
+	text-align: center;
+}
+
+.vca_detail_mbox_detail2{
+	margin: 0 auto auto auto;
+	margin-top: .3rem;
+	text-align: center;
+	font-size: .25rem;
+	width:5.6rem;
+	height:auto;
+	color: white;
+}
+
+.vca_detail_mbox_detail2 > p{
+	line-height:.45rem;
+	margin-top: -.18rem;
+}
+
+.vca_detail_jiemi{
+	width:7rem;
+  margin: 0 auto;
+	display: block;
+	margin-top: .8rem;
+	padding-bottom: .4rem;
+}
+
+/*@media only screen and (min-device-width:750px) {
+	body{
+		width:100%;
+		height: 100%;
+	}
+}*/
+
+.vca_detail_game{
+	position:absolute;
+	width: 100%;
+	height: 100%;
+	overflow:hidden;
+	/*background-image: url(../images/detail/game_bg.jpg);*/
+	background-size:100% 100% ;
+}
+
+.vca_datail_game_back{
+	position:absolute;
+  top: .63rem;
+	left: .16rem;
+}
+
+.vca_detail_game_tit{
+	text-align: center;
+	margin-top:.6rem;
+	color: white;
+}
+
+.vca_detail_game_tit > span{
+    font-size: .42rem;
+    letter-spacing: 2px;
+}
+
+.vca_detail_game_tit > p{
+    padding-top: .1rem;
+}
+
+.vca_detail_game_sp{
+	margin: 0px auto;
+	text-align: center;
+	margin-top: 1.07rem;
+	margin-left: -.2rem;
+
+}
+
+.vca_detail_game_sp > img{
+	width:4.9rem;
+	height:3.9rem;
+}
+
+@media only screen and (min-device-width: 750px) {
+	.vca_detail_game_sp{
+		margin-top:.5rem;
+	}
+	.vca_detail_game_sp > img{
+		width:3.96rem;
+	}
+}
+
+.vca_detail_game_time{
+	width:2rem;
+	text-align:center;
+	margin: 0 auto;
+	position: relative;
+	top: .4rem;
+}
+
+.djs{
+	color: white;
+	font-size:.28rem;
+	/* padding-top:.2rem; */
+}
+.second{
+	  color: white;
+    font-size: .6rem;
+    display: block;
+    text-align: center;
+    line-height: 1;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+@media only screen and (min-device-width:750px ) {
+	.vca_detail_game_time{
+	width: 2rem;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    top: 0.2rem;
+	}
+}
+
+.vca_detail_game_detail{
+	text-align: center;
+	margin-top:.7rem;
+}
+
+.vca_detail_game_detail > span{
+	font-family: "SimHei","黑体","Microsoft YaHei","sans-serif"!important;
+	font-size:.3rem;
+	color: white;
+	letter-spacing:1px;
+}
+
+.btn_gee{
+    width: 2.6rem;
+    height: .8rem;
+    border-radius: 50px;
+    border: 1px solid white;
+    display: block;
+    margin: auto;
+	margin-top: .5rem;
+	color: white;
+	font-size: .35rem;
+	letter-spacing: 2px;
+	outline:none;
+	background: transparent;
+}
+
+@media only screen and (min-device-width: 750px) {
+	.vca_detail_game_detail{
+		text-align: center;
+	}
+}
+
+@media only screen and (min-device-width:750px ) {
+	.vca_detail_game_begin{
+	}
+}
+
+.vca_box_game{
+	position:absolute;
+	width: 100%;
+	height: 100%;
+	overflow:hidden;
+	/*background-image: url(../images/detail/game_bg.jpg);*/
+	background-size:100% 100% ;
+}
+
+.vca_box_game_back{
+    position:absolute;
+    top: .63rem;
+  	left: .16rem;
+}
+
+.vca_box_game_tit{
+	text-align: center;
+	margin-top:.6rem;
+	color: white;
+}
+
+.vca_box_game_tit > span{
+	  font-size: .42rem;
+    letter-spacing: 2px;
+}
+
+.vca_box_game_tit > p{
+    padding-top: .1rem;
+}
+
+.vca_box_game_div{
+    position: absolute;
+  	left:1.2rem;
+    z-index: 10000；
+}
+
+
+.vca_box_game_div div{
+	position:absolute;
+	opacity: 0;
+
+}
+.vca_box_game_div > .div1 img{
+  	width: 1.5rem;
+  	height: 1.2rem;
+    top: .65rem;
+    left: .86rem;
+}
+
+
+.vca_box_game_div > .div1{
+    width: 1.42rem;
+    height: 1.19rem;
+    z-index: 1000;
+    background-image:url(../images/error_box_1.png);
+    background-size: cover;
+    left: .71rem;
+    top: 1.62rem;
+}
+.vca_box_game_div > .div1.success{
+	background-image:url(../images/error_box_1_1.png);
+}
+.vca_box_game_div > .div2.success{
+	background-image:url(../images/error_box_2_1.png);
+}
+.vca_box_game_div > .div3.success{
+	background-image:url(../images/error_box_3_1.png);
+}
+.vca_box_game_div > .div2{
+    width: 1.45rem;
+    height: 1.19rem;
+    background-image:url(../images/error_box_2.png);
+    top: 1.10rem;
+    left: 1.69rem;
+    z-index: 1000;
+    background-size: cover;
+}
+
+.vca_box_game_div > .div3{
+    width: 1.45rem;
+    height: 1.19rem;
+    background-image:url(../images/error_box_3.png);
+    top: .54rem;
+	  left:2.71rem;
+    z-index: 1000;
+    background-size: cover;
+}
+
+
+@media only screen and (min-device-width: 750px) {
+	.vca_box_game_div{
+    margin: .9rem auto auto auto;
+	}
+	.vca_box_game_div > div{
+    width: .8rem;
+    height: .6rem;
+    border: 2px solid snow;
+    transform: rotate(-33deg);
+}
+
+.vca_box_game_div > .div1{
+    top: 1.1rem;
+    left: 1.23rem;
+}
+
+.vca_box_game_div > .div2{
+    top: 0.65rem;
+    left: 2.1rem;
+}
+
+.vca_box_game_div > .div3{
+    top: .2rem;
+    right: 1.26rem;
+}
+}
+
+.vca_box_game_sp{
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top:2.91rem;
+}
+
+.vca_box_game_sp > img{
+  	width: 5rem;
+  	height: 4rem;
+    position: absolute;
+    margin: auto auto;
+    left: 0;
+    right: 0;
+	}
+
+
+@media only screen and (min-device-width: 750px) {
+	.vca_box_game_sp{
+		margin-top:.5rem;
+	}
+	.vca_box_game_sp > img{
+		width:3.96rem;
+	}
+}
+
+.vca_box_game_tit2{
+    text-align: center;
+    position: absolute;
+    top: 8.5rem;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+.vca_box_game_tit3{
+	text-align: center;
+	position: absolute;
+	top: 8rem;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+}
+
+.vca_box_game_tit2 > span{
+	font-size:.31rem;
+	color: white;
+	line-height: .5rem;
+}
+
+.vca_box_game_tit3 > span{
+	font-size:.31rem;
+	color: white;
+	line-height: .5rem;
+}
+
+.vca_box_game_sp .c-flower{
+	position: absolute;
+	width:4.90rem;
+	left:1.20rem;
+	top:0
+}
+.vca_box_game_sp .c-flower >img{
+	width:4.9rem;
+	height:3.9rem;
+	position: absolute;
+	left:0;
+	top:0;
+}
+.vca_box_game_sp .vca_box_game_box{
+    top: 4.4rem;
+    position: absolute
+}
+/*.vca_box_game_box{
+    width: 6.3rem;
+    top: 7.2rem;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    height: 1.5rem;
+    position: absolute
+}*/
+
+.vca_box_game_box > img{
+	position: absolute;
+	float: left;
+	display: block;
+  margin-left: .5rem;
+}
+.vca_box_game_sp  .vca_box_game_box img{
+	width:100%;
+	position: absolute;
+	left:0;
+	top:0;
+}
+.vca_box_game_sp  .vca_box_game_box  .flower-1{
+    width: 1.21rem;
+    height: 0.97rem;
+    left:.45rem;
+    position: absolute;
+}
+.vca_box_game_sp  .vca_box_game_box  .flower-2{
+    width: 1.21rem;
+    height: 0.97rem;
+    position: absolute;
+    left: 2.09rem;
+}
+.vca_box_game_sp  .vca_box_game_box  .flower-3{
+	width: 1.21rem;
+    height: 0.97rem;
+	left:3.75rem;
+	position: absolute;
+}
+.vca_box_game_suc{
+    text-align: center;
+    top: 9.92rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    position: absolute;
+}
+
+.bftn_gee{
+	width: 2.6rem;
+    height: .8rem;
+    border-radius: 50px;
+	border: 1px solid white;
+	color: white;
+	background: transparent;
+	outline: none;
+	letter-spacing: 2px;
+	font-size: .35rem;
+
+}
+/*拼图游戏错误答案页面*/
+.box_game_lose{
+    position:absolute;
+	width: 100%;
+	height: 100%;
+	overflow:hidden;
+	background-image: url(../images/detail/game_bg.jpg);
+	background-size:100% 100% ;
+}
+
+.box_game_lose_back{
+    position:absolute;
+    top: .91rem;
+   	left: .16rem;
+}
+
+.box_game_lose_tit{
+	text-align: center;
+	margin-top:.6rem;
+	color: white;
+}
+
+.box_game_lose_tit > span{
+	font-size: .4rem;
+    font-family: myFirstFont;
+    letter-spacing: 2px;
+}
+
+.box_game_lose_tit > p{
+	font-family: myFirstFont;
+    padding-top: .3rem;
+}
+
+.box_game_lose_sp{
+
+}
+
+
+
+
+
+
+
+
+
+.box_game_lose_p{
+	width: 5rem;
+	margin:8rem auto;
+	text-align: center;
+}
+
+.box_game_lose_p > p{
+	font-size:.3rem;
+	color: white;
+}
+
+.box_game_lose_btn{
+    text-align: center;
+    top: 9.92rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    position: absolute
+}
+
+/*拼图游戏正确答案页面*/
+.box_game_suc{
+	position:absolute;
+	width: 100%;
+	height: 100%;
+	overflow:hidden;
+	background-image: url(../images/detail/game_bg.jpg);
+	background-size:100% 100% ;
+}
+
+.box_game_suc_back{
+    position:absolute;
+    top: .63rem;
+   	left: .16rem;
+}
+
+.box_game_suc_tit{
+	text-align: center;
+	margin-top:.6rem;
+	color: white;
+}
+
+.box_game_suc_tit > span{
+	  font-size: .4rem;
+    font-family: myFirstFont;
+    letter-spacing: 2px;
+}
+
+.box_game_suc_tit > p{
+	  font-family: myFirstFont;
+    padding-top: .3rem;
+}
+
+.box_gema_suc_sp{
+	position:absolute;
+	top:2.88rem;
+	margin: 0 auto;
+	left: 1.16rem;
+	width:4.94rem;
+	height:3.99rem;
+	text-align: center;
+}
+.box_gema_suc_sp img{
+	width:100%;
+}
+
+
+.box_game_suc_p{
+    width: 3.8rem;
+    height: auto;
+	  margin:6.5rem auto;
+	  text-align: center;
+}
+
+.box_game_suc_p > p{
+    line-height: .3rem;
+    padding-bottom:1rem;
+    color: white;
+    font-size:.36rem;
+    letter-spacing: .014rem;
+}
+
+.box_game_suc_p > span{
+    color: white;
+    letter-spacing: .014rem;
+    line-height: .4rem;
+}
+
+.box_game_suc_save{
+    text-align: center;
+    top: 10.3rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    position: absolute
+}
+
+.box_game_suc > img{
+	width:3rem;
+}
+
+.n_animation{
+         /* background-color: goldenrod; */
+
+         /*-webkit-animation: ssss 0.2s ease-in-out;
+         -moz-animation: ssss 0.2s ease-in-out;
+         -ms-animation: numberBox_inputBox_animation 0.2s ease-in-out;*/
+         -webkit-animation: ssss 0.8s ease-out;
+         -webkit-animation-fill-mode: forwards;
+}
+.error_n_animation{
+         /* background-color: goldenrod; */
+
+         /*-webkit-animation: ssss 0.2s ease-in-out;
+         -moz-animation: ssss 0.2s ease-in-out;
+         -ms-animation: numberBox_inputBox_animation 0.2s ease-in-out;*/
+        -webkit-animation: error_sss .3s ease alternate infinite;
+        -webkit-animation-fill-mode: forwards;
+}
+
+     /* 抖动动画 */
+@keyframes ssss {
+          0%,100%{
+          	   opacity: 0;
+          }
+          50%{
+                opacity: 1;
+          }
+}
+@-webkit-keyframes ssss {
+          0%,100%{
+          	   opacity: 0;
+          }
+          50%{
+                opacity: 1;
+          }
+}
+@keyframes error_sss {
+          0%{
+          	    opacity: 0;
+          }
+          100%{
+                opacity: 1;
+          }
+}
+@-webkit-keyframes error_sss {
+          0%{
+          	    opacity: 0;
+          }
+          100%{
+                opacity: 1;
+          }
+}
